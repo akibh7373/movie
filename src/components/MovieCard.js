@@ -4,17 +4,18 @@ const MovieCard = ({ movie }) => {
   return (
     <>
       <div className="max-w-sm rounded border-2 border-blue-300 overflow-hidden mb-5">
-        <div className="w-full h-[400px] relative">
+        <div className="w-full sm:h-[400px] h-[250px] relative">
           <Image
             src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`}
             alt={movie?.title}
+            className='h-full'
             fill={true}
             objectFit="cover"
           />
         </div>
-        <div className="px-6 py-4">
+        <div className="lg:block hidden px-6 py-4">
           <div className="font-bold text-xl mb-2">{movie?.title}</div>
-          <p className="text-gray-700 text-base">
+          {/* <p className="text-gray-700 text-base">
             <strong>Release Date:</strong> {movie?.release_date}
           </p>
           <p className="text-gray-700 text-base">
@@ -40,7 +41,7 @@ const MovieCard = ({ movie }) => {
           </p>
           <p className="text-gray-700 text-base">
             <strong>Video:</strong> {movie?.video ? 'Yes' : 'No'}
-          </p>
+          </p> */}
           <p className="text-gray-700 text-base">
             <strong>Vote Count:</strong> {movie?.vote_count}
           </p>
