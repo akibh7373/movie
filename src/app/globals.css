@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,5 +19,44 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+  }
+}
+/* Header */
+.searchIcon,
+.nav4k {
+  font-size: 16px;
+}
+/* Hero */
+h1 {
+  font-size: 50px;
+}
+/* Responsive Media Query for Extra Small Devices */
+@media (max-width: 575px) {
+  body {
+    font-size: 12px;
+  }
+  /* Header */
+  .searchIcon,
+  .nav4k {
+    font-size: 25px;
+  }
+  /* Hero */
+  h1 {
+    font-size: 28px;
+  }
+}
+/* Responsive Media Query for Small Devices */
+@media (min-width: 576px) and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  /* Header */
+  .searchIcon,
+  .nav4k {
+    font-size: 14px;
+  }
+  /* Hero */
+  h1 {
+    font-size: 28px;
   }
 }
