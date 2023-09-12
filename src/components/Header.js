@@ -14,13 +14,12 @@ export default function Header() {
                         <FaSistrix className="searchIcon lg:ml-2 ml-0 md:m-0 text-slate-400" />
                         <input type="text" className="lg:block hidden lg:pl-2 capitalize rounded-r-3xl w-full bg-slate-800 text-slate-400" placeholder="quick search" />
                     </div>
-                    <Link href='' className="md:block hidden mr-5 capitalize text-slate-400 hover:text-slate-200">Home</Link>
-                    <Link href='' className="nav4k mr-5 uppercase text-lime-500">4K</Link>
-                    <Link href='' className="mr-5 capitalize text-slate-400 hover:text-slate-200"><span className="md:hidden block"><FaRegListAlt size={25} /></span><span className="md:block hidden">trending</span></Link>
+                    <Link href='' className="md:block hidden mr-5 capitalize text-slate-400 hover:text-slate-200">streaming</Link>
+                    {/* <Link href='' className="nav4k mr-5 uppercase text-lime-500">4K</Link> */}
+                    <Link href='' className="mr-5 capitalize text-slate-400 hover:text-slate-200"><span className="md:hidden block"><FaRegListAlt size={25} /></span><span className="md:block hidden">plans</span></Link>
                     <Link href='' className="mr-5 capitalize text-slate-400 hover:text-slate-200"><span className="md:hidden block"><FaRegListAlt size={25} /></span><span className="md:block hidden">browse movies</span></Link>
                     <div className="signUpArea flex justify-end items-center">
                         <Link href='' className="md:mr-5 capitalize text-slate-400 hover:text-slate-200"><span className="lg:hidden md:hidden sm:block block"> <FaUser size={25} /></span> <span className="lg:block md:block hidden">login</span> </Link>
-                        <Link href='' className="md:block hidden md:mr-5 capitalize text-slate-400 hover:text-slate-200">Register</Link>
                     </div>
                 </div>
             </header>
