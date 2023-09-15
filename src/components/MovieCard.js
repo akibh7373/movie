@@ -3,7 +3,7 @@ import Image from 'next/image';
 const MovieCard = ({ movie }) => {
   return (
     <>
-      <div className="movieCard max-w-sm rounded overflow-hidden mb-5 p-3 rounded-2xl" style={{ position: 'relative' }}>
+      <div className="movieCard max-w-sm overflow-hidden mb-5 p-3 rounded-2xl" style={{ position: 'relative' }}>
         <div className="w-full sm:h-[400px] h-[250px] relative rounded-2xl">
           <Image
             src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`}
