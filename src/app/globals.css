@@ -12,8 +12,19 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background: radial-gradient(circle, rgba(223,148,4,1) 0%, rgba(73,54,26,1) 0%, rgba(69,51,27,1) 0%, rgba(54,42,29,1) 0%, rgba(36,30,32,1) 54%, rgba(36,30,32,1) 100%);
+  --yellow: #ffdc48;
 }
-
+#radial-bg,
+.radial-bg {
+  background-image: var(--background);
+}
+.text-primary {
+  color: var(--yellow);
+}
+.bg-yellow {
+  background-color: var(--yellow);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -29,6 +40,11 @@
 /* Hero */
 h1 {
   font-size: 50px;
+}
+/* Movie Card */
+.movieCard {
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(25px);
 }
 /* Responsive Media Query for Extra Small Devices */
 @media (max-width: 575px) {

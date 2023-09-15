@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
 import MovieCard from '@/components/MovieCard';
 import Footer from '@/components/Footer';
@@ -15,10 +16,16 @@ export default async function Home() {
     <>
       <Header />
       <Hero />
-      <div className="md:columns-5 sm:columns-3 columns-2 m-5">
-        {popularMovies.results.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
+      <div className='movieSection px-5'>
+        <div className='flex justify-between items-center lg:py-3'>
+          <h2 className='d-inline capitalize text-3xl font-bold text-primary'>popular</h2>
+          <Link href='' className='d-inline-block capitalize text-primary'>view all</Link>
+        </div>
+        <div className="md:columns-4 sm:columns-3 columns-2 my-5 ">
+          {popularMovies.results.map((movie) => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+        </div>
       </div>
       <Footer />
     </>

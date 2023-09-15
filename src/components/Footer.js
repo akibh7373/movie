@@ -2,7 +2,7 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <>
-            <footer className="footerContainer flex flex-col justify-center items-center px-5 py-3 text-center bg-slate-700 text-white" style={{ fontSize: '14px' }}>
+            <footer className="footerContainer flex flex-col justify-center items-center px-5 py-3 text-center text-white" style={{ fontSize: '14px' }}>
                 <div className="footerNavArea">
                     <span>&copy; 2023 - 2023 - </span>
                     <Link href='/' className="capitalize text-slate-400 hover:text-slate-200">blog - </Link>
