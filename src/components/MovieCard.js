@@ -3,18 +3,18 @@ import Image from 'next/image';
 const MovieCard = ({ movie }) => {
   return (
     <>
-      <div className="max-w-sm rounded border-2 border-blue-300 overflow-hidden mb-5">
-        <div className="w-full sm:h-[400px] h-[250px] relative">
+      <div className="movieCard max-w-sm overflow-hidden mb-5 p-3 rounded-2xl" style={{ position: 'relative' }}>
+        <div className="w-full sm:h-[400px] h-[250px] relative rounded-2xl">
           <Image
             src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`}
             alt={movie?.title}
-            className='h-full'
+            className='h-full rounded-2xl'
             fill={true}
             objectFit="cover"
           />
         </div>
-        <div className="lg:block hidden px-6 py-4">
-          <div className="font-bold text-xl mb-2">{movie?.title}</div>
+        <div className="lg:block hidden px-6 pt-3">
+          <div className="font-bold text-xl mb-2 text-white">{movie?.title}</div>
           {/* <p className="text-gray-700 text-base">
             <strong>Release Date:</strong> {movie?.release_date}
           </p>
@@ -26,11 +26,11 @@ const MovieCard = ({ movie }) => {
           </p>
           <p className="text-gray-700 text-base">
             <strong>Popularity:</strong> {movie?.popularity}
+          </p> */}
+          <p className="flex justify-start items-center text-white text-base">
+            <Image src='/imdb.png' className='mr-2' alt='imdb' width={40} height={20} />  {movie?.vote_average}
           </p>
-          <p className="text-gray-700 text-base">
-            <strong>Vote Average:</strong> {movie?.vote_average}
-          </p>
-          <p className="text-gray-700 text-base">
+          {/* <p className="text-gray-700 text-base">
             <strong>Adult:</strong> {movie?.adult ? 'Yes' : 'No'}
           </p>
           <p className="text-gray-700 text-base">
@@ -41,10 +41,10 @@ const MovieCard = ({ movie }) => {
           </p>
           <p className="text-gray-700 text-base">
             <strong>Video:</strong> {movie?.video ? 'Yes' : 'No'}
-          </p> */}
-          <p className="text-gray-700 text-base">
-            <strong>Vote Count:</strong> {movie?.vote_count}
           </p>
+          <p className="text-base text-white">
+            <strong>Vote Count:</strong> {movie?.vote_count}
+          </p> */}
         </div>
       </div>
     </>
