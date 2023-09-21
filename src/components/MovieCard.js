@@ -3,7 +3,7 @@ import Image from 'next/image';
 const MovieCard = ({ movie }) => {
   return (
     <>
-      <div className="movieCard max-w-sm overflow-hidden mb-5 p-3 rounded-2xl" style={{ position: 'relative' }}>
+      <div className="movieCard max-w-sm overflow-hidden mb-5 rounded-2xl" style={{ position: 'relative' }}>
         <div className="w-full sm:h-[400px] h-[250px] relative rounded-2xl">
           <Image
             src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`}
@@ -12,8 +12,7 @@ const MovieCard = ({ movie }) => {
             fill={true}
             objectFit="cover"
           />
-        </div>
-        <div className="lg:block hidden px-6 pt-3">
+        <div className="lg:block hidden absolute bottom-0 left-0 right-0 z-10 p-3" style={{backgroundColor: '#ffffff18', backdropFilter: 'blur(20px)'}}>
           <div className="font-bold text-xl mb-2 text-white">{movie?.title}</div>
           {/* <p className="text-gray-700 text-base">
             <strong>Release Date:</strong> {movie?.release_date}
@@ -45,6 +44,7 @@ const MovieCard = ({ movie }) => {
           <p className="text-base text-white">
             <strong>Vote Count:</strong> {movie?.vote_count}
           </p> */}
+        </div>
         </div>
       </div>
     </>
