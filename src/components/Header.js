@@ -15,7 +15,7 @@ export default function Header() {
                     <Link href='' className="uppercase text-white">browse movies</Link>
                 </div>
                 <div className="signUpArea flex justify-end items-center">
-                    <Link href='' className="uppercase"><Btn title="login"/> </Link>
+                    <Link href='' className="uppercase text-black font-bold"><Btn title="login"/> </Link>
                 </div>
             </header>
         </>
