@@ -12,7 +12,7 @@ const MovieCard = ({ movie }) => {
             fill={true}
             objectFit="cover"
           />
-        <div className="lg:block hidden absolute bottom-0 left-0 right-0 z-10 p-3" style={{backgroundColor: '#ffffff18', backdropFilter: 'blur(20px)'}}>
+        <div className="lg:block hidden absolute bottom-0 left-0 right-0 z-10 p-3" style={{backdropFilter: 'blur(16px) saturate(180%)', backgroundColor: 'rgba(17, 25, 40, 0.75)'}}>
           <div className="font-bold text-xl mb-2 text-white">{movie?.title}</div>
           {/* <p className="text-gray-700 text-base">
             <strong>Release Date:</strong> {movie?.release_date}
