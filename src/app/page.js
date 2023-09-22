@@ -18,7 +18,7 @@ export default async function Home() {
       <Hero />
       <div className='movieSection px-5'>
         <div className='flex justify-between items-center lg:py-3'>
-          <h2 className='d-inline uppercase text-3xl font-bold text-white'>popular</h2>
+          <h2 className='d-inline uppercase lg:text-3xl md:text-xl text-lg font-bold text-white'>popular</h2>
           <Link href='' className='d-inline-block uppercase text-white'>view all</Link>
         </div>
         <div className="md:columns-4 sm:columns-3 columns-2 my-5 ">
